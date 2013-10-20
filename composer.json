@@ -1,5 +1,5 @@
 {
-	"name": "cakedc/recaptcha",
+	"name": "kminek/recaptcha",
 	"type": "cakephp-plugin",
 	"description": "Recaptcha Plugin for CakePHP 2.x",
 	"keywords": ["cakephp","recaptcha"],
