@@ -1,0 +1,17 @@
+{
+	"name": "cakedc/recaptcha",
+	"type": "cakephp-plugin",
+	"description": "Recaptcha Plugin for CakePHP 2.x",
+	"keywords": ["cakephp","recaptcha"],
+	"homepage": "http://cakedc.com",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Cake Development Corporation",
+			"homepage": "http://cakedc.com"
+		}
+	],
+	"require": {
+		"composer/installers": "*"
+	}
+}
