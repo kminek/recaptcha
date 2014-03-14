@@ -245,9 +245,9 @@ class RecaptchaHelper extends AppHelper {
 	public function mailHide($email) {
 		$emailparts = $this->__hideEmailParts($email);
 		$url = $this->mailHideUrl($email);
-
-		return htmlentities($emailparts[0]) . "<a href='" . htmlentities ($url) .
-			"' onclick=\"window.open('" . htmlentities ($url) . "', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;\" title=\"Reveal this e-mail address\">...</a>@" . htmlentities ($emailparts [1]);
+		$email = htmlentities($emailparts[0]) . "<a href='" . htmlentities ($url) .
+			"' onclick=\"window.open('" . htmlentities ($url) . "', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;\">...</a>@" . htmlentities ($emailparts [1]);
+		return sprintf('<span class="mail-hide" title="%s">%s</span>', __('Reveal this e-mail address'), $email);
 	}
 
 }
